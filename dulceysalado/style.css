@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: white;
+    font-family: 'Vidaloka', serif;
+
+}
+
+
+
+/* ------------------------------CONTENEDOR 1------------------------------- */
+
+.contenedor1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+    color:white;
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    width: 150px;
+}
+
+.bloque {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.descripcion {
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+/* --------------------------------- MENU ------------------------------- */
+
+.main {
+    background: #b3b3b3;
+    width: 100%;
+    padding: 5px 0px;
+    height: 40px;
+}
+
+.movil {
+    display: none;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 20px;
+}
+
+.main ul li {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.main ul li :hover {
+    border-bottom: solid black 2px;
+}
+
+/* ------------------------CONTENEDOR 2------------------------------ */
+
+.contenedor2 {
+    margin-top: 30px;
+    width: 90%;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    color: white;
+    display: flex;
+}
+
+.bloque2 {
+    height: 300px;
+    width: 50%;
+    background: url(/img/empanada.jpeg) no-repeat center center/cover;
+}
+
+.bloque2-1 {
+    height: 300px;
+    width: 50%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center
+}
+
+
+.calltoactionnegro {
+    font-size: 30px;
+    border: solid white 2px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.calltoactionnegro:hover {
+    background: #b3b3b3;
+    cursor: pointer;
+}
+
+/* ------------------------CONTENEDOR 3------------------------------ */
+
+.contenedor3 {
+    background: black;
+    width: 90%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.bloque3 {
+    background: black;
+    height: 300px;
+    text-align: center;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloque3-1 {
+    background: #b3b3b3;
+    height: 300px;
+    text-align: center;
+    width: 50%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.bloque3 ul,
+.bloque3-1 ul {
+    font-size: 30px;
+}
+
+.lista {
+    margin: 10px;
+}
+
+.lista li {
+    list-style: none;
+    padding: 1px;
+    font-size: 17px;
+}
+
+.calltoactiongris {
+    cursor: pointer;
+    border: black solid 3px;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.calltoactiongris:hover {
+    background: black;
+    color: white;
+    border: white solid 3px;
+}
+
+/* ------------------- SOCIAL ----------------------------------- */
+
+.social {
+    width: 90%;
+    background: #b3b3b3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.links {
+    text-align: center;
+}
+
+.social a i {
+    font-size: 50px;
+    color: black;
+    padding: 15px;
+}
+
+/* ---------------------- PIE DE PAGINA -------------------- */
+
+.piedepagina {
+    margin-top: 30px;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/*  */
+@media (max-width: 700px) {
+
+    .movil {
+        display: block;
+        position: absolute;
+        margin-left: 86%;
+        text-align: center;
+    }
+
+    .main ul.menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        opacity: .95;
+        transform: translateX(-400px);
+        transition: transform .9s ease-in-out;
+    }
+
+    .main ul.menu.show {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        opacity: .95;
+        transform: translateX(0px);
+    }
+
+    .menu {
+        padding-top: 50px;
+    }
+
+    .menu li {
+        padding: 5px;
+    }
+
+    .main ul.menu li a{
+        color: white;
+    }
+
+    .main ul.menu li a:hover {
+        border-bottom: solid white 3px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .bloque3 ul,
+    .bloque3-1 ul {
+        font-size: 20px;
+    }
+
+    .bloque3 ul li,
+    .bloque3-1 ul li {
+        font-size: 15px;
+    }
+
+    .calltoactiongris,
+    .calltoactionnegro {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 350px) {
+    .bloque3 ul,
+    .bloque3-1 ul {
+        font-size: 15px;
+    }
+
+    .bloque3 ul li,
+    .bloque3-1 ul li {
+        font-size: 12px;
+    }
+
+    .calltoactiongris,
+    .calltoactionnegro {
+        font-size: 20px;
+    }
+}
